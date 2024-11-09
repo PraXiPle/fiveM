@@ -8,7 +8,6 @@ RegisterCommand(
 const ox = global.exports["oxmysql"];
 function addPlayer(source: number) {
   const player = source;
-
   const ID = getPlayerIdentifiers(player);
   const discordId = ID.filter((v) => v.includes("discord"));
   const ox = global.exports["oxmysql"];
@@ -33,6 +32,10 @@ function addPlayer(source: number) {
   );
 }
 
+on("playerConnection", () => {
+  const source = global.source;
+  addPlayer(source);
+});
 onNet("getUserRole", () => {
   const source = global.source;
   const ID = getPlayerIdentifiers(source);
