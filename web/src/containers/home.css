@@ -1,0 +1,75 @@
+.screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.box {
+  background-color: gray;
+  position: relative;
+
+  border-radius: 40px;
+  padding: 12px;
+  width: 40%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.btnClose {
+  right: 0;
+  top: 0;
+  color: black;
+  padding: 20px 30px 20px 30px;
+  border-radius: 20px;
+  font-size: 40px;
+  position: absolute;
+}
+.inputCarName {
+  width: 50%;
+  height: 50px;
+  font-size: 29px;
+}
+.btnSearch {
+  color: black;
+  padding: 4px 20px 4px 20px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.searchCarBox {
+  flex: 3;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+}
+.spawnRes {
+  display: flex;
+  flex: 7;
+  flex-direction: column;
+  gap: 4px;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(132, 107, 107); */
+  width: 100%;
+}
+.title {
+  font-weight: bold;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+}
+.carName{
+  font-size: 25px;
+
+}
